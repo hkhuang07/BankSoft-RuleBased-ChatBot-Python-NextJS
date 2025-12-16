@@ -1,18 +1,29 @@
 # 🏦 BankSoft AI Assistant - Intelligent Rule-Based Banking Chatbot
 
-[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
-[![Python](https://img.shields.io/badge/python-3.10+-green.svg)](https://python.org)
-[![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg)](https://nextjs.org)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://typescriptlang.org)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3+-teal.svg)](https://tailwindcss.com)
+[![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)[![Python](https://img.shields.io/badge/python-3.10+-green.svg)](https://python.org)[![Next.js](https://img.shields.io/badge/Next.js-14+-black.svg)](https://nextjs.org)[![TypeScript](https://img.shields.io/badge/TypeScript-5+-blue.svg)](https://typescriptlang.org)[![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-3+-teal.svg)](https://tailwindcss.com)
 
 BankSoft AI Assistant is a sophisticated rule-based chatbot ecosystem specifically designed for banking operations, mimicking the comprehensive service experience of major Vietnamese banks like Vietcombank. This intelligent system combines the logical processing power of Python at the backend with modern, responsive interfaces built on Next.js for seamless user experience.
 
 ---
 
+## Interface
+
+<p align="center">
+  <img src="demo/light-interface.jpg" alt="Light Interface" width="700"/>
+  <br/>
+  <em>Light Interface</em>
+</p>
+
+<p align="center">
+   <img src="demo/dark-interface.jpg" alt="Dark Interface" width="700"/>
+  <br/>
+  <em>Dark Interface</em>
+</p>
+
 ## 🌟 Key Features
 
 ### 🎯 **Advanced Rule-Based Intelligence**
+
 - **Hierarchical Intent Recognition (Level 1-3)**: Processes requests from general to specific levels
   - Level 1: General categories (Transfer Money, Bill Payment, Account Services)
   - Level 2: Sub-categories (Domestic Transfer, International Transfer)
@@ -20,36 +31,78 @@ BankSoft AI Assistant is a sophisticated rule-based chatbot ecosystem specifical
 - **Global Intent Search**: Allows users to jump between conversation flows at any time
 - **Smart Context Switching**: Seamless navigation between different banking services
 
+<p align="center">
+   <img src="demo/data-structures.jpg" alt="Data Struct" width="700"/>
+  <br/>
+  <em>Hierarchical Intent Recognition</em>
+</p>
+
 ### 🧠 **Intelligent Language Processing**
+
 - **Synonym System**: Extensive vocabulary mapping for natural language understanding
 - **Fuzzy Matching**: Handles typos, variations, and misspellings effectively
 - **Multi-language Support**: Full Vietnamese and English language support
 - **Real-time Translation**: Dynamic content translation with localStorage persistence
 
+<p align="center">
+   <img src="demo/languages.jpg" alt="Language Processing" width="700"/>
+  <br/>
+  <em>Language Processing</em>
+</p>
+
 ### 🎨 **Modern User Interface**
+
 - **Glass Morphism Design**: Modern backdrop-blur effects with multi-layer shadows
 - **Dynamic Gradient Backgrounds**: Animated 5-color gradient with smooth transitions
 - **Dark/Light Mode**: Intelligent theme switching with system preference detection
 - **Responsive Design**: Mobile-first approach optimized for all devices
 - **Micro-interactions**: Smooth hover effects and scale animations
 
+<p align="center">
+   <img src="demo/vietnamese.jpg" alt="Vietnamese" width="300"/>
+   <img src="demo/english.jpg" alt="English" width="300"/>
+  <br/>
+  <em>English and Vietnamese Languages</em>
+</p>
+
+<p align="center">
+   <img src="demo/darkmode.jpg" alt="Dark Mode" width="400"/>
+   <img src="demo/lightmode.jpg" alt="Light Mode" width="400"/>
+  <br/>
+  <em>Dark and Light Mode</em>
+</p>
+
 ### 🔄 **Smart Session Management**
+
 - **Persistent Chat History**: Local storage of conversation sessions
 - **State Machine Architecture**: Separate conversation states for each user
 - **Auto-save Functionality**: Automatic session preservation
 - **Session Recovery**: Restore previous conversations seamlessly
 
+<p align="center">
+   <img src="demo/session.jpg" alt="Session" width="400"/>
+  <br/>
+  <em>Session Management</em>
+</p>
+
 ### 🌐 **Advanced Backend Integration**
+
 - **Connection Health Monitoring**: Real-time backend status detection
 - **Auto-reconnection Logic**: Intelligent retry mechanisms with 30-second intervals
 - **Smart Error Handling**: Context-aware error messages based on connection status
 - **Timeout Management**: 5-second request timeout with AbortSignal
 
+<p align="center">
+   <img src="demo/backend.jpg" alt="Backend" width="400"/>
+  <br/>
+  <em>Python Backend</em>
+</p>
 ---
 
 ## 🛠 Technology Stack
 
 ### **Backend (Python)**
+
 ```
 ├── Python 3.10+
 ├── Flask Framework
@@ -69,6 +122,7 @@ BankSoft AI Assistant is a sophisticated rule-based chatbot ecosystem specifical
 ```
 
 ### **Frontend (Next.js + TypeScript)**
+
 ```
 ├── Next.js 14+ (App Router)
 ├── React 18+ (UI Library)
@@ -140,15 +194,15 @@ The system operates on a sophisticated **State Machine Architecture**:
 │ │ - Animations│ │           │                        │
 │ └─────────────┘ │           │                        │
 └─────────────────┘           ▼
-                    ┌─────────────────┐
-                    │   LocalStorage  │
-                    │                 │
-                    │ ┌─────────────┐ │
-                    │ │ Theme       │ │
-                    │ │ Language    │ │
-                    │ │ Chat History│ │
-                    │ └─────────────┘ │
-                    └─────────────────┘
+                           ┌────────────────────────────────┐
+                           │          LocalStorage          │
+                           │                                │
+                           │        ┌─────────────┐         │
+                           │        │ Theme       │         │
+                           │        │ Language    │         │
+                           │        │ Chat History│         │
+                           │        └─────────────┘         │
+                           └────────────────────────────────┘
 ```
 
 ---
@@ -199,6 +253,7 @@ BankSoft-RuleBased-ChatBot/
 ## 🚀 Getting Started
 
 ### **Prerequisites**
+
 - **Python 3.10+** with pip
 - **Node.js 18+** with npm
 - **Git** for version control
@@ -206,22 +261,23 @@ BankSoft-RuleBased-ChatBot/
 ### **Backend Setup**
 
 1. **Navigate to backend directory:**
+
    ```bash
    cd backend
    ```
-
 2. **Create virtual environment (recommended):**
+
    ```bash
    python -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-
 3. **Install dependencies:**
+
    ```bash
    pip install -r requirements.txt
    ```
-
 4. **Start the API server:**
+
    ```bash
    python bank_chatbot_api.py
    ```
@@ -231,16 +287,17 @@ BankSoft-RuleBased-ChatBot/
 ### **Frontend Setup**
 
 1. **Navigate to frontend directory:**
+
    ```bash
    cd frontend
    ```
-
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
-
 3. **Start development server:**
+
    ```bash
    npm run dev
    ```
@@ -250,6 +307,7 @@ BankSoft-RuleBased-ChatBot/
 ### **Quick Start Script**
 
 For Windows users:
+
 ```batch
 # Backend
 cd backend
@@ -263,6 +321,7 @@ npm run dev
 ```
 
 For Unix/Linux/macOS users:
+
 ```bash
 # Backend
 cd backend
@@ -285,11 +344,13 @@ npm run dev
 The core intelligence lies in our **three-tier hierarchical classification system**:
 
 #### **Level 1: General Categories**
+
 - **Banking Services**: Account management, transfers, payments
 - **Information Queries**: Balance, transactions, rates
 - **Support Services**: Troubleshooting, complaints, feedback
 
 #### **Level 2: Service Sub-categories**
+
 ```
 Banking Services
 ├── Money Transfer
@@ -307,6 +368,7 @@ Banking Services
 ```
 
 #### **Level 3: Specific Actions**
+
 ```
 Domestic Transfer
 ├── Transfer to VCB Account
@@ -384,6 +446,7 @@ const themeConfig = {
 Create `.env` files for configuration:
 
 **Backend (.env)**
+
 ```env
 FLASK_ENV=development
 FLASK_DEBUG=True
@@ -392,6 +455,7 @@ LOG_LEVEL=INFO
 ```
 
 **Frontend (.env.local)**
+
 ```env
 NEXT_PUBLIC_API_URL=http://localhost:5000/api
 NEXT_PUBLIC_APP_NAME=BankSoft AI Assistant
@@ -446,6 +510,7 @@ module.exports = {
 The project includes comprehensive testing scripts:
 
 #### **Backend Testing**
+
 ```bash
 # Windows
 cd backend
@@ -457,6 +522,7 @@ python -m pytest tests/
 ```
 
 #### **Frontend Testing**
+
 ```bash
 # Windows
 cd frontend
@@ -480,18 +546,21 @@ cd frontend
 ## 📊 Performance Metrics
 
 ### **Backend Performance**
+
 - **Response Time**: < 200ms average
 - **Throughput**: 100+ requests/second
 - **Memory Usage**: < 100MB baseline
 - **Error Rate**: < 0.1%
 
 ### **Frontend Performance**
+
 - **First Contentful Paint**: < 1.5s
 - **Largest Contentful Paint**: < 2.5s
 - **Time to Interactive**: < 3s
 - **Cumulative Layout Shift**: < 0.1
 
 ### **Optimization Features**
+
 - **Code Splitting**: Automatic route-based splitting
 - **Image Optimization**: Next.js Image component
 - **Bundle Analysis**: Webpack bundle analyzer
@@ -502,12 +571,14 @@ cd frontend
 ## 🔒 Security Considerations
 
 ### **Data Protection**
+
 - **Client-side Storage**: All data stored locally in browser
 - **No Persistent Backend Storage**: No sensitive data on server
 - **Input Validation**: Comprehensive sanitization
 - **HTTPS Ready**: SSL/TLS configuration support
 
 ### **Privacy Features**
+
 - **No Analytics Tracking**: Zero third-party tracking
 - **Local Storage Only**: User data never leaves browser
 - **Session Isolation**: Each tab maintains separate sessions
@@ -518,6 +589,7 @@ cd frontend
 ## 🚀 Deployment Options
 
 ### **Development Deployment**
+
 ```bash
 # Local development with hot reload
 npm run dev
@@ -526,6 +598,7 @@ npm run dev
 ### **Production Deployment**
 
 #### **Frontend (Vercel/Netlify)**
+
 ```bash
 # Build for production
 npm run build
@@ -538,6 +611,7 @@ netlify deploy --prod --dir=.next
 ```
 
 #### **Backend (Heroku/DigitalOcean)**
+
 ```bash
 # Prepare for deployment
 pip freeze > requirements.txt
@@ -551,6 +625,7 @@ doctl apps create --spec .do/app.yaml
 ```
 
 ### **Docker Support**
+
 ```dockerfile
 # Example Dockerfile for backend
 FROM python:3.10-slim
@@ -581,6 +656,7 @@ CMD ["python", "bank_chatbot_api.py"]
 - **Documentation**: Comprehensive inline comments
 
 ### **Contribution Areas**
+
 - 🧠 **Rule Engine**: Enhance intent recognition algorithms
 - 🎨 **UI/UX**: Improve design and user experience
 - 🌍 **Localization**: Add more language support
@@ -592,17 +668,20 @@ CMD ["python", "bank_chatbot_api.py"]
 ## 📚 Additional Resources
 
 ### **Technical Documentation**
+
 - **[Implementation Guide](documents/implementation_guide.md)**: Detailed technical implementation
 - **[Technology Stack Analysis](documents/tech_stack_analysis.md)**: Comprehensive tech evaluation
 - **[Project Plan](documents/project_plan.md)**: Development roadmap and milestones
 
 ### **API Documentation**
+
 - **Health Check**: `GET /api/health`
 - **Chat Endpoint**: `POST /api/chat`
 - **Reset Session**: `POST /api/reset`
 - **Response Format**: JSON with `response`, `state`, `suggestions`
 
 ### **Frontend Components**
+
 - **Chat Interface**: Main conversation UI
 - **Message Bubbles**: User and bot message styling
 - **Quick Actions**: Smart suggestion buttons
@@ -619,12 +698,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 👥 Team & Acknowledgments
 
 **BankSoft Development Team**
+
 - **Backend Architecture**: Python Flask + Rule Engine Design
 - **Frontend Development**: Next.js + TypeScript + Modern UI
 - **UX/UI Design**: Glass Morphism + Responsive Design
 - **Testing & QA**: Comprehensive test coverage
 
 **Special Thanks**
+
 - Vietcombank for banking service inspiration
 - Open source community for excellent tools
 - Contributors and beta testers
@@ -634,12 +715,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Support & Contact
 
 ### **Getting Help**
-- 📧 **Email**: support@banksoft.ai
+
+- 📧 **Email**: huykyunh.k@gmail.com
 - 💬 **Issues**: GitHub Issues for bug reports
 - 📖 **Documentation**: Comprehensive guides in `/documents`
 - 🎥 **Video Tutorials**: Coming soon
 
 ### **Feature Requests**
+
 - 🆕 **New Features**: Submit via GitHub Issues
 - 🐛 **Bug Reports**: Detailed reproduction steps required
 - 💡 **Improvements**: Community-driven enhancements

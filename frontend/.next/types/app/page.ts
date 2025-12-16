@@ -1,4 +1,4 @@
-// File: D:\Study\Software_Engineer_New_Technologies\Project\src\vietcombank-assistant\frontend\app\page.tsx
+// File: D:\Study\Software_Engineer_New_Technologies\Project\banksoft-assistant\frontend\app\page.tsx
 import * as entry from '../../../app/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
