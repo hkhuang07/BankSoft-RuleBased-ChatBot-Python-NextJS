@@ -59,8 +59,8 @@ BankSoft AI Assistant is a sophisticated rule-based chatbot ecosystem specifical
 - **Micro-interactions**: Smooth hover effects and scale animations
 
 <p align="center">
-   <img src="demo/vietnamese.jpg" alt="Vietnamese" width="300"/>
-   <img src="demo/english.jpg" alt="English" width="300"/>
+   <img src="demo/vietnamese.jpg" alt="Vietnamese" width="400"/>
+   <img src="demo/english.jpg" alt="English" width="400"/>
   <br/>
   <em>English and Vietnamese Languages</em>
 </p>
